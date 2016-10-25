@@ -18,37 +18,7 @@ struct ToyBin {
     
     // TODO: Implement all of the sort functions (lets organize this toy bin!)
     
-    mutating func sortShips() {
-        
-        ships = ships.sorted { first, second in
-            if first.name == "Titanic" { return true }
-            return first.age > second.age
-        }
-        
-    }
-    
-    mutating func sortBooks() {
-        
-        books = books.sorted { $0.name < $1.name }
-        
-    }
-    
-    mutating func sortBowlingPins() {
-        
-        bowlingPins = bowlingPins.sorted { $0.color.rawValue < $1.color.rawValue }
-        
-    }
-    
-    mutating func sortMusicCDs() {
-        
-        musicCDs = musicCDs.sorted { first, second in
-            if first.name == "Drake" { return true }
-            return first.name < second.name
-        }
-        
-    }
-    
-    
+ 
 }
 
 
