@@ -42,6 +42,13 @@ How should you implement the closure? Use the following conditions:
 
 ![](https://media.giphy.com/media/DjYYoUZJ8D4VW/giphy.gif)
 
+**(5)** Create a function called `changeColorOfAllPins(to:)` which takes in one argument called `color` of type `Color`. Ultimately, we want to change the `color` stored property of every `BowlingPin` instance in our `bowlingPins` array to the `color` parameter passed in to this function. Can you do this with a `for-in` loop? Yes. Should you for this problem? No--we will be using the `map` function instead!
+
+Implement this function by calling the `map` function on our `bowlingPins` stored property. This function call will return back a new array (of the same type of the function thats calling it) which means it will return back a [`BowlingPin`] array.
+
+When you call on `map`, it requires that you pass in a closure as an argument. You should look to call on `changeColor(to:)` (a function available to any instance of `BowlingPin`) within your implementation of the closure.
+
+The return value on your `map` method call should be assigned to the `bowlingPins` stored property (thus mutating it!).
 
 
 
