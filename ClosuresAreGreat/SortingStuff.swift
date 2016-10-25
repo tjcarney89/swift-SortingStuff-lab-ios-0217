@@ -48,7 +48,17 @@ struct ToyBin {
         
     }
     
-    
+    mutating func changeColorOfAllPins(to color: Color) {
+        
+        bowlingPins = bowlingPins.map { pin in
+                var pin = pin
+                pin.changeColor(to: color)
+                return pin
+
+        }
+        
+    }
+
 }
 
 
@@ -69,6 +79,10 @@ struct BowlingPin {
     var name: String
     var film: String
     var color: Color
+    
+    mutating func changeColor(to color: Color) {
+        self.color = color
+    }
 }
 
 
