@@ -2,8 +2,8 @@
 //  SortingStuff.swift
 //  ClosuresAreGreat
 //
-//  Created by Jim Campagno on 10/25/16.
-//  Copyright © 2016 Gamesmith, LLC. All rights reserved.
+//  Created by Ron Don Volante on 10/25/16.
+//  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
 import Foundation
@@ -42,11 +42,16 @@ struct BowlingPin {
 }
 
 
-enum Color: Int {
-    case red, organe, yellow, green, blue, indigo, violet
+extension BowlingPin {
+    mutating func changeColor(to color: Color) {
+        self.color = color
+    }
 }
 
 
+enum Color: Int {
+    case red, organe, yellow, green, blue, indigo, violet
+}
 
 struct MusicCD {
     var name: String
