@@ -13,7 +13,18 @@
 		7DA8ED631DBEE2440035BA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DA8ED621DBEE2440035BA81 /* Assets.xcassets */; };
 		7DA8ED661DBEE2440035BA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA8ED641DBEE2440035BA81 /* LaunchScreen.storyboard */; };
 		7DA8ED6E1DBF91BF0035BA81 /* SortingStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA8ED6D1DBF91BF0035BA81 /* SortingStuff.swift */; };
+		8F7B5BCC1E15753300EB1F5D /* ClosuresAreGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B5BCB1E15753300EB1F5D /* ClosuresAreGreatTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F7B5BCE1E15753300EB1F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DA8ED501DBEE2440035BA81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DA8ED571DBEE2440035BA81;
+			remoteInfo = ClosuresAreGreat;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7DA8ED581DBEE2440035BA81 /* ClosuresAreGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClosuresAreGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		7DA8ED651DBEE2440035BA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DA8ED671DBEE2440035BA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA8ED6D1DBF91BF0035BA81 /* SortingStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortingStuff.swift; sourceTree = "<group>"; };
+		8F7B5BC91E15753300EB1F5D /* ClosuresAreGreatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClosuresAreGreatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7B5BCB1E15753300EB1F5D /* ClosuresAreGreatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresAreGreatTests.swift; sourceTree = "<group>"; };
+		8F7B5BCD1E15753300EB1F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7DA8ED551DBEE2440035BA81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7B5BC61E15753300EB1F5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				7DA8ED5A1DBEE2440035BA81 /* ClosuresAreGreat */,
+				8F7B5BCA1E15753300EB1F5D /* ClosuresAreGreatTests */,
 				7DA8ED591DBEE2440035BA81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7DA8ED581DBEE2440035BA81 /* ClosuresAreGreat.app */,
+				8F7B5BC91E15753300EB1F5D /* ClosuresAreGreatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				7DA8ED671DBEE2440035BA81 /* Info.plist */,
 			);
 			path = ClosuresAreGreat;
+			sourceTree = "<group>";
+		};
+		8F7B5BCA1E15753300EB1F5D /* ClosuresAreGreatTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F7B5BCB1E15753300EB1F5D /* ClosuresAreGreatTests.swift */,
+				8F7B5BCD1E15753300EB1F5D /* Info.plist */,
+			);
+			path = ClosuresAreGreatTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,13 +119,31 @@
 			productReference = 7DA8ED581DBEE2440035BA81 /* ClosuresAreGreat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8F7B5BC81E15753300EB1F5D /* ClosuresAreGreatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7B5BD21E15753300EB1F5D /* Build configuration list for PBXNativeTarget "ClosuresAreGreatTests" */;
+			buildPhases = (
+				8F7B5BC51E15753300EB1F5D /* Sources */,
+				8F7B5BC61E15753300EB1F5D /* Frameworks */,
+				8F7B5BC71E15753300EB1F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F7B5BCF1E15753300EB1F5D /* PBXTargetDependency */,
+			);
+			name = ClosuresAreGreatTests;
+			productName = ClosuresAreGreatTests;
+			productReference = 8F7B5BC91E15753300EB1F5D /* ClosuresAreGreatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7DA8ED501DBEE2440035BA81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Gamesmith, LLC";
 				TargetAttributes = {
@@ -101,6 +151,12 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3E2QGNXM7N;
 						ProvisioningStyle = Automatic;
+					};
+					8F7B5BC81E15753300EB1F5D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WNAGBXF4G9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7DA8ED571DBEE2440035BA81;
 					};
 				};
 			};
@@ -118,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				7DA8ED571DBEE2440035BA81 /* ClosuresAreGreat */,
+				8F7B5BC81E15753300EB1F5D /* ClosuresAreGreatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +187,13 @@
 				7DA8ED661DBEE2440035BA81 /* LaunchScreen.storyboard in Resources */,
 				7DA8ED631DBEE2440035BA81 /* Assets.xcassets in Resources */,
 				7DA8ED611DBEE2440035BA81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F7B5BC71E15753300EB1F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F7B5BC51E15753300EB1F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7B5BCC1E15753300EB1F5D /* ClosuresAreGreatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F7B5BCF1E15753300EB1F5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DA8ED571DBEE2440035BA81 /* ClosuresAreGreat */;
+			targetProxy = 8F7B5BCE1E15753300EB1F5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7DA8ED5F1DBEE2440035BA81 /* Main.storyboard */ = {
@@ -285,6 +365,38 @@
 			};
 			name = Release;
 		};
+		8F7B5BD01E15753300EB1F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = ClosuresAreGreatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.ClosuresAreGreatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClosuresAreGreat.app/ClosuresAreGreat";
+			};
+			name = Debug;
+		};
+		8F7B5BD11E15753300EB1F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
+				INFOPLIST_FILE = ClosuresAreGreatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johannkerr.ClosuresAreGreatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClosuresAreGreat.app/ClosuresAreGreat";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -305,6 +417,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8F7B5BD21E15753300EB1F5D /* Build configuration list for PBXNativeTarget "ClosuresAreGreatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7B5BD01E15753300EB1F5D /* Debug */,
+				8F7B5BD11E15753300EB1F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

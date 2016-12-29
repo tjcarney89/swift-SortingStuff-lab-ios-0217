@@ -50,7 +50,7 @@ extension BowlingPin {
 
 
 enum Color: Int {
-    case red, organe, yellow, green, blue, indigo, violet
+    case red, orange, yellow, green, blue, indigo, violet
 }
 
 struct MusicCD {
