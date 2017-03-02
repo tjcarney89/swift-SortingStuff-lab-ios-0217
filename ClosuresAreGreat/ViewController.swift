@@ -14,8 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-  
-    
-
+    func performOperation(with numbers: Double..., operation: (Double, Double) -> Double) -> Double {
+        var newNumbers = numbers
+        let removedNumber = newNumbers.removeFirst()
+        let result = newNumbers.reduce(removedNumber) { (runningTotal: Double, next: Double) in
+            return operation(runningTotal, next)
+        }
+        return result
+    }
     
 }
